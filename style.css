@@ -5,7 +5,7 @@
 body{
   font-family: sans-serif;
   margin: 0;
-  background-color: rgba(250, 0, 137, 0.329);
+  background-color: rgba(209, 183, 198, 0.719);
 
   display: flex;
   align-items: center;
@@ -92,6 +92,30 @@ h1 em {
   border-radius: 4px;
 }
 
+.editar{
+  height: fit-content;
+  height: 32px;
+  width: 50px;
+  background-color: rgb(110, 126, 86);
+  border: 1px solid rgb(13, 13, 14);
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.excluir{
+  height: fit-content;
+  height: 32px;
+  width: 50px;
+  background-color: rgb(177, 77, 77);
+  border: 1px solid rgb(19, 17, 19);
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 .search-form{
   display: flex;
@@ -103,35 +127,14 @@ h1 em {
 }
 .conteiner-form-adicao-funcionario{
   position: absolute;
-  width: 92vw;
-  height: 100%;
+  width: 50vw;
+  height: 50%;
   display: none;
   align-items: center;
+  border-radius: 10%;
   justify-content: center;
-  background-color: #86838399;
+  background-color: #a35985ef;
   flex-direction: column;
 
-}
-.modal-form{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: #0009;
-  top: 0;
-  left: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
 
-#form-funcionario{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  border-radius: 4px;
-  gap: 5px;
-  
-  background-color: darkgray;
-  box-shadow: 0px 0px 20px #000;
 }
