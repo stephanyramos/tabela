@@ -92,8 +92,7 @@ if (isset($_GET["buscarFuncionario"]) && $_GET["buscarFuncionario"] != "") {
 
     <button id="btnAddFuncionario"> Acrescentar Funcionário!</button>
     <table>
-      <form>
-
+   
         <h1>Adicionar funcionário</h1>
         <tr>
           <th>Id</th>
@@ -104,8 +103,8 @@ if (isset($_GET["buscarFuncionario"]) && $_GET["buscarFuncionario"] != "") {
           <th>Endereço IP</th>
           <th>País</th>
           <th>Departamento</th>
-          <th>Editar</th>
-          <th>Excluir </th>
+          <th>Mudanças</th>
+          <!-- <th>Excluir </th> -->
         </tr>
 
         <?php
@@ -120,9 +119,12 @@ if (isset($_GET["buscarFuncionario"]) && $_GET["buscarFuncionario"] != "") {
             <td><?= $funcionario->ip_address ?></td>
             <td><?= $funcionario->country ?></td>
             <td><?= $funcionario->department ?></td>
-            <td> <button class="editar">&#9999;</button> </td>
             <!-- <td> <button class="excluir">&#128465;</button></td> -->
-            <td><button onclick="deleter(<?=$funcionario->id?>)"class ="material-icons">delete</button></td>
+           <td>
+             <button onclick="editar(<?=$funcionario->id?>)"class ="Editar">&#9999;</button>
+        
+            <button onclick="deletar(<?=$funcionario->id?>)"class ="material-icons">delete</button>
+           </td>
           </tr>
         <?php
         endforeach;

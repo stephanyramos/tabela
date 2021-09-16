@@ -52,4 +52,15 @@ function deletarFuncionrio($nomeArquivo , $idFuncionario){
     $json = json_encode(array_values($funcionarios));
     file_put_contents($nomeArquivo, $json);
 }
+// busca fincinario por ID:
+function buscarFuncionarioPorId($nomeArquivo, $idFuncionario){
 
+    $funcionarios = lerArquivo($nomeArquivo);
+    foreach($funcionarios as $funcionario) {
+        if ($funcionario->id == $idFuncionario){
+        return $funcionario;
+        }
+
+    }
+
+}

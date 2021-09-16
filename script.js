@@ -1,14 +1,24 @@
 function showModal() {
     document.querySelector(".conteiner-form-adicao-funcionario").style.display = "flex";
 }
-function deleter(idFuncionario){
-    // pede confirmçao do usuario 
-    let confirmacao=confirm("Deseja deletar o funcionarios");
-    //se confirmar que quer apagar, rediciona para arquivo de ações 
-    //com id como parametro
-    if(confirmacao){
-        window.location = "acaosDeleter.php?id=" + idFuncionario
+
+function deletar(idFuncionario){
+    //pede confirmação ao usuário
+    let confirmacao = confirm("Deseja deletar o funcionário?");
+
+    //se confirmar que quer apagar, redireciona para arquivo de ação
+    //com o id como parâmetro
+    if(true){
+        // window.location = "acaoDeletar.php";
+        window.location = "acaoDeletar.php?id=" + idFuncionario;
     }
+}
+//função editar
+function editar (idFuncionario){
+    // teste de recebimento
+
+    // alert (idFuncionario);
+    window.location = "editar.php?id="+idFuncionario;
 }
 
 document.getElementById("btnAddFuncionario")
