@@ -21,6 +21,7 @@ $funcionario = buscarFuncionarioPorId("./empresaX.json", $funcionarioId);
     <title>Empresa X</title>
 </head>
 
+
 <body>
     <div class="container-form">
         <form id="form-funcionario" action="acaoEditar.php" method="POST">
